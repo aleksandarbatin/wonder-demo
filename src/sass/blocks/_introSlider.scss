@@ -1,0 +1,95 @@
+//-------------------------
+//----------- INTRO VIEW
+//-------------------------
+
+.introSlider {
+	.slide-top {
+		padding: 4rem 0 3rem 12rem;
+		background-color: $c-red;
+		h2 {
+			padding-left: 3rem;
+			margin: 2.5rem 0;
+			font-family: $titleFont;
+			font-size: 6rem;
+			font-weight: 900;
+			color: $c-white;
+		}
+	}
+	&__tag {
+		padding-left: 3rem;
+		font-family: $styledFont;
+		font-size: 2.4rem;
+		font-weight: 300;
+		color: $c-white;
+	}
+	.comments {
+		display: inline-block;
+		padding-left: 3rem;
+		.icon-chat {
+			margin-right: 1rem;
+			font-size: 2.4rem;
+		}
+	}
+	.comments,.print-save {
+		font-family: $titleFont;
+		font-size: 1.8rem;
+		font-weight: 500;
+		color: $c-white;
+	}
+	.print-save {
+		float: right;
+		margin-right: 3rem;
+	}
+	.slide-content {
+		position: relative;
+		height: 45rem;
+		padding-top: 5rem;
+		padding-left: 12rem;
+		h4 {
+			padding-left: 3rem;
+			font-family: $baseFont;
+			font-size: 1.8rem;
+			font-weight: 700;
+			line-height: 1.6;
+			text-transform: uppercase;
+			color: $c-greyText;
+			span {
+				font-weight: 400;
+				text-transform: initial;
+			}
+		}
+		h3 {
+			padding-left: 3rem;
+			margin-top: 5rem;
+			margin-bottom: 4rem;
+			font-family: $titleFont;
+			font-size: 3.5rem;
+			font-weight: 700;
+			color: $c-greyText;
+		}
+		ul li {
+			display: block;
+			position: relative;
+			padding-left: 3rem;
+			font-size: 2.2rem;
+			line-height: 1.7;
+			color: #333;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 1.5rem;
+				left: -0.8rem;
+				width: 1rem;
+				height: 1rem;
+				background-color: $c-red;
+				border-radius: 0.5rem; 
+			}
+		}
+	}
+	.slide-img {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

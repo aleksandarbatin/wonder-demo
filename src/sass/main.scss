@@ -24,6 +24,7 @@
 @import 'config/baseConfig';
 @import 'config/typography';
 @import 'config/helpers';
+@import 'config/iconFont';
 
 //------LAYOUTS
 @import 'layouts/siteWrapper';
@@ -34,14 +35,12 @@
 
  //------BLOCKS
 @import 'blocks/header';
-@import 'blocks/intro';
+@import 'blocks/introSlider';
 @import 'blocks/footer';
 
 
 // //------COMPONENTS
 
-@import 'components/termine';
-@import 'components/newsArticle';
 
 // //------SLIDER±S
 

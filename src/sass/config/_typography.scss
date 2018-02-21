@@ -2,10 +2,9 @@
 //---------------TYPOGRAPHY
 //-------------------------
 
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Nunito:300,400,600,700,900|Roboto+Slab:300,400,700');
 
 //------FONT-FACE
-
-// @include fontFace (fontello, /fontello, null, null, eot woff ttf svg);
 
  @include fontFace (fontello, fontello, null, null, eot woff ttf svg);
 
