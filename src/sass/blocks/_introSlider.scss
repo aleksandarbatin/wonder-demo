@@ -3,6 +3,7 @@
 //-------------------------
 
 .introSlider {
+	position: relative;
 	.slide-top {
 		padding: 4rem 0 3rem 12rem;
 		background-color: $c-red;
@@ -27,18 +28,20 @@
 		padding-left: 3rem;
 		.icon-chat {
 			margin-right: 1rem;
-			font-size: 2.4rem;
 		}
 	}
 	.comments,.print-save {
 		font-family: $titleFont;
-		font-size: 1.8rem;
+		font-size: 2.4rem;
 		font-weight: 500;
 		color: $c-white;
 	}
 	.print-save {
 		float: right;
 		margin-right: 3rem;
+		.icon-printer {
+			margin-right: 1rem;
+		}
 	}
 	.slide-content {
 		position: relative;
@@ -91,5 +94,45 @@
 		position: absolute;
 		top: 0;
 		right: 0;
+	}
+	span[class^="btn-"]:before {
+		@include absolute(center);
+	}
+	.btn-prev,.btn-next {
+		position: absolute;
+		top: 10rem;
+		width: 6rem;
+		height: 6rem;
+		font-size: 3rem;
+		color: $c-white;
+		border-radius: 3rem;
+		background-color: rgba(0,0,0,0.5);
+		cursor: pointer;
+		@include transition(0.2s all linear);
+		&:hover {
+			background-color: $c-white;
+			color: $c-red;
+		}
+	}
+	.btn-prev {
+		left: 4rem;
+	}
+	.btn-next {
+		right: 4rem;
+	}
+	.slide-tags {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 2rem 3rem;
+		font-family: $styledFont;
+		font-size: 1.6rem;
+		color: $c-white;
+		background-color: rgba(0,0,0,0.3);
+		span {
+			font-family: $baseFont;
+			font-size: 1.4rem;
+		}
 	}
 }

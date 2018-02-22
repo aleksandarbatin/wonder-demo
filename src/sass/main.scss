@@ -27,7 +27,7 @@
 @import 'config/iconFont';
 
 //------LAYOUTS
-@import 'layouts/siteWrapper';
+@import 'layouts/wrappers';
 
 //------COMMON
 @import 'common/media';
@@ -36,10 +36,12 @@
  //------BLOCKS
 @import 'blocks/header';
 @import 'blocks/introSlider';
+@import 'blocks/articleContent';
 @import 'blocks/footer';
 
 
 // //------COMPONENTS
+@import 'components/searchForm';
 
 
 // //------SLIDER±S

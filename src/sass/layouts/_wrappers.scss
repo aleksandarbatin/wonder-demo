@@ -1,0 +1,26 @@
+//---------------------------
+//------------ WRAPPERS, CONTAINERS...
+//---------------------------
+
+.siteWrapper {
+	padding-top: 10rem;
+	background-color: $c-seaBlue;
+	background-image: url('../images/bg-site.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+}
+.siteMain {
+	width: 100%;
+	height: auto;
+	max-width: 1470px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: $c-white;
+}
+
+.articleMain {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
