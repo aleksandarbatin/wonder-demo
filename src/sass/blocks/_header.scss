@@ -3,8 +3,17 @@
 //-------------------------
 
 .header {
+	position: relative;
 	padding: 3rem 3rem 0; 
+	@include breakpoint(tablet--landscape) {
+		height: 10rem;
+		padding-top: 0;
+	}
 	&__top-nav {
+		background: red;
+		@include breakpoint(tablet--landscape) {
+			display: none;
+		}
 		li {
 			position: relative;
 			float: left;
@@ -93,19 +102,33 @@
     	width: 100%;
 		padding-bottom: 3rem;
 		overflow: hidden;
+		@include breakpoint(tablet--landscape) {
+			padding-bottom: 0;
+		}
 	}
 	&__logo {
 		float: left;
 		width: 50%;
 		padding: 3rem 0 0 3rem;
+		@include breakpoint(tablet--landscape) {
+			@include absolute(center-vertical);
+			width: 30%;
+			padding: 0;
+		}
 		img {
 			width: 80%;
+			@include breakpoint(tablet--landscape) {
+				width: 100%;
+			}
 		}
 	}
 	&__items {
 		float: left;
 		width: 50%;
 		padding-top: 5rem;
+		@include breakpoint(tablet--landscape) {
+			display: none;
+		}
 	}
 	.navigation {
 		margin-left: 2rem;
@@ -116,6 +139,13 @@
 			font-size: 1.6rem;
 			font-weight: 700;
 			color: $c-grey;
+		}
+	}
+	.icon-menu {
+		display: none;
+		@include breakpoint(tablet--landscape) {
+			display: block;
+			position: absolute;
 		}
 	}
 }

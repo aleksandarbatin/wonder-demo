@@ -8,10 +8,13 @@ $c-white           : #fff;
 $c-red             : #e63917;
 $c-yellow          : #f8bb13;
 $c-yellowDark      : #f6ac0e;
+$c-yellowPale      : #ffff99;
 $c-orange          : #f4810f;
 $c-orangeDark      : #f16e0b;
 $c-purpleBlue      : #1f4fed;
-$c-seaBlue         : #1d44a1; 
+$c-seaBlue         : #1d44a1;
+$c-darkBlue        : #112961;
+$c-strongBlue      : #193a89; 
 $c-purpleDark      : #173ee8;
 $c-green           : #7ddb25;
 $c-greenDark       : #6ad21b;
@@ -21,6 +24,7 @@ $c-violetDark      : #9f06e9;
 $c-grey            : #555;
 $c-greyText        : #3d3d3d;
 $c-maroonRed       : #cd3b24;
+$c-warmRed         : #e54c2c;
 $c-whiteShade      : #f7f7f7;
 
 //-----PATHS
@@ -42,8 +46,9 @@ $styledFont:'Roboto Slab', serif;
 
 
 //------MEDIA QUERIES
-$desktop--Large  : 1700px;
-$desktop         : 1440px;
-$tablet          : 1023px;
-$mobile			 : 767px;
+$desktop--Large     : 1700px;
+$desktop            : 1470px;
+$tablet--landscape  : 1024px;
+$tablet             : 1023px;
+$mobile			    : 767px;
 

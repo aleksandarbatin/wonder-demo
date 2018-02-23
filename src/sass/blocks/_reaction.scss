@@ -1,0 +1,48 @@
+//-------------------------
+//----------- REACTION
+//-------------------------
+
+.reaction {
+	height: 13rem;
+	background-color: $c-warmRed;
+	padding: 0rem 10rem;
+	@include vendor-prefixes(box-shadow, 0px 0px 19px -1px rgba(0,0,0,0.61));
+	&__box {
+		float: left;
+		height: 100%;
+		padding: 3rem 5rem;
+		border-right: 2px solid $c-white;
+		&:last-child {
+			border-right: none;
+		} 
+	}
+	&__title {
+		margin-bottom: 2.5rem;
+		font-family: $styledFont;
+		font-size: 1.8rem;
+		line-height: 1.4;
+		color: $c-yellowPale;
+		text-transform: uppercase;
+	}
+	&__box.rating {
+		width: 30%;
+		.icon-star {
+			font-size: 2rem;
+			color: $c-white;
+		}
+	}
+	&__box.comments {
+		width: 30%;
+		.icon-chat {
+			font-size: 2.1rem;
+			font-weight: 500;
+			color: $c-white;
+			span {
+				font-family: $titleFont;
+			}
+			&:before {
+				margin-right: 1rem;
+			}
+		}
+	}
+}

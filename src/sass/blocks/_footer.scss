@@ -3,5 +3,89 @@
 //-------------------------
 
 .footer {
-	
+	padding: 7rem 3rem 4rem;
+	background-color: $c-seaBlue;
+	@extend .wrapUp;
+	&__left,
+	&__bigNav,
+	&__nav {
+		float: left;
+		li {
+			display: block;
+		}
+	}
+	&__left {
+		width: 30%;
+	}
+	&__logo {
+		width: 31rem;
+	}
+	&__bigNav {
+		padding-left: 6rem;
+		width: 55%;
+		li {
+			float: left;
+			width: 50%;
+			padding: 1rem 0;
+			margin-bottom: 0rem;
+			font-size: 1.6rem;
+			font-weight: 700;
+			color: $c-darkBlue;
+			text-transform: uppercase;
+
+		}
+		span[class^="icon-"]:before {
+			font-size: 2rem;
+			margin-right: 1.5rem;
+			color: $c-darkBlue;
+		}
+	}
+	&__nav {
+		width: 15%;
+		li {
+			padding: 0.5rem 0;
+			font-family: $titleFont;
+			font-size: 1.6rem;
+			font-weight: 700;
+			text-align: right;
+		}
+	}
+	&__bottom {
+		padding-top: 6rem;
+		font-size: 1.4rem;
+		clear: both;
+		.copyright {
+			float: left;
+		}
+		&__nav {
+			float: right;
+			li {
+				margin-right: 0.5rem;
+				text-decoration: underline;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+		}
+	}
+	.searchForm {
+		width: 33rem;
+		margin-left: 0rem;
+		.inputWrapper {
+			height: 4rem;
+			input {
+				font-size: 1.6rem;
+			}
+		}
+		.btnWrapper {
+			height: 6.5rem;
+			width: 6.5rem;
+			border: 0.5rem solid $c-white;
+			background-color: $c-strongBlue;
+			.icon-search {
+				font-size: 2.2rem;
+			}
+		}
+	}
 }

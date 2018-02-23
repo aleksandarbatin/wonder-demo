@@ -5,10 +5,13 @@
 .siteWrapper {
 	padding-top: 10rem;
 	background-color: $c-seaBlue;
-	background-image: url('../images/bg-site.jpg');
+	background-image: url('../images/bg-fish.png');
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: 100%;
+	@include breakpoint(tablet--landscape) {
+		padding-top: 0;
+	}
 }
 .siteMain {
 	width: 100%;

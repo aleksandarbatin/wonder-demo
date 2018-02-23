@@ -23,19 +23,13 @@ html {
     font-size  : $baseFontSize;
   //change this part
     @include breakpoint (desktop--Large) {
-        font-size: 10px; // > 1400
+        font-size: 10px; // > 1470
     }
     @include breakpoint (desktop) {
-        font-size: 0.7142857142857143vw; //10px - 1400px
+        font-size: 0.680272108843537vw; //10px - 1470px
     }
-    @include breakpoint (tablet) {
-        font-size: 1.01010101010101vw;//10px - 768px
-    }
-    @include breakpoint (mobile) {//10px - 640px
-        font-size: 1.5625vw;
-    }
-    @include breakpoint (mobile--s) {//10px - 640px
-        font-size: 2.083333333333vw;
+    @include breakpoint (tablet--landscape) {
+        font-size: 0.9765625vw; //10px - 1024px
     }
 }
 
