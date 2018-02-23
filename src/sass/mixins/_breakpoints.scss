@@ -20,7 +20,7 @@
     @else if $point == tablet--landscape {//max-width = 1024px
         @media (max-width: $tablet--landscape)                             { @content; }
     }
-    @else if $point == tablet {//max-width = 990px
+    @else if $point == tablet {//max-width = 768px
         @media (max-width: $tablet)                             { @content; }
     }
     @else if $point == mobile {//max-width = 640px
@@ -38,6 +38,6 @@
 //------MEDIA QUERIES
 $desktop            : 1470px;
 $tablet--landscape  : 1024px;
-$tablet             : 990px;
+$tablet             : 768px;
 $mobile             : 640px; 
 $mobile--s          : 480px; 

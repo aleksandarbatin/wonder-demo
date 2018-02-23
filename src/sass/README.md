@@ -8,14 +8,14 @@ Basic building blocks here actually are components and blocks. Blocks represent 
 For example HEADER and FOOTER and in this case mediaWALL all of them are complex unity that are compound of smaller parts. These parts can exist only in them or anywhere on the site.
 These small parts can also be COMPONENTS (acutally if parts exist not only in one block they are componets).
 ```
-BLOCKS: header, footer, mainWall
+BLOCKS: header, footer
 ```
 ## COMPONENTS
 
 Componets are small pieces of blocks usually. They are cells of project that are repeated in many places of course with modification which is realized through the block to which they belong.
 
 ```
-COMPONENTS:  media, btn, common, ...
+COMPONENTS:  mobilemanu, btn, common, search ...
 ```
 ## BEM METODOLOGY
 

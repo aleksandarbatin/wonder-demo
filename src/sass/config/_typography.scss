@@ -31,6 +31,9 @@ html {
     @include breakpoint (tablet--landscape) {
         font-size: 0.9765625vw; //10px - 1024px
     }
+     @include breakpoint(mobile) {
+        font-size: 1.5625vw; //10px - 1024px
+    }
 }
 
 

@@ -7,7 +7,7 @@
 	padding: 3rem 3rem 0; 
 	@include breakpoint(tablet--landscape) {
 		height: 10rem;
-		padding-top: 0;
+		padding: 0 3rem;
 	}
 	&__top-nav {
 		background: red;
@@ -54,36 +54,6 @@
 			span {
 				position: relative;
 				top: 0.6rem;
-			}
-		}
-		.home {
-			background-color: $c-yellow;
-			.top-nav__title {
-				background-color: $c-yellowDark;
-			}
-		}
-		.planet {
-			background-color: $c-orange;
-			.top-nav__title {
-				background-color: $c-orangeDark;
-			}
-		}
-		.brain {
-			background-color: $c-purpleBlue;
-			.top-nav__title {
-				background-color: $c-purpleDark;
-			}
-		}
-		.question {
-			background-color: $c-green;
-			.top-nav__title {
-				background-color: $c-greenDark;
-			}
-		}
-		.tent {
-			background-color: $c-violet;
-			.top-nav__title {
-				background-color: $c-violetDark;
 			}
 		}
 		.plus {
@@ -145,7 +115,40 @@
 		display: none;
 		@include breakpoint(tablet--landscape) {
 			display: block;
-			position: absolute;
+			@include absolute(center-vertical);
+			right: 3rem;
+			font-size: 5rem;
+			cursor: pointer;
 		}
+	}
+}
+.home {
+	background-color: $c-yellow;
+	.top-nav__title {
+		background-color: $c-yellowDark;
+	}
+}
+.planet {
+	background-color: $c-orange;
+	.top-nav__title {
+		background-color: $c-orangeDark;
+	}
+}
+.brain {
+	background-color: $c-purpleBlue;
+	.top-nav__title {
+		background-color: $c-purpleDark;
+	}
+}
+.question {
+	background-color: $c-green;
+	.top-nav__title {
+		background-color: $c-greenDark;
+	}
+}
+.tent {
+	background-color: $c-violet;
+	.top-nav__title {
+		background-color: $c-violetDark;
 	}
 }

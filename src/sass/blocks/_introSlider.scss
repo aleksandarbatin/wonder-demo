@@ -7,6 +7,9 @@
 	.slide-top {
 		padding: 4rem 0 3rem 12rem;
 		background-color: $c-red;
+		@include breakpoint(mobile) {
+			padding: 3.8rem;
+		}
 		h2 {
 			padding-left: 3rem;
 			margin: 2.5rem 0;
@@ -14,6 +17,9 @@
 			font-size: 6rem;
 			font-weight: 900;
 			color: $c-white;
+			@include breakpoint(tablet--landscape) {
+				font-size: 3.4rem;
+			}
 		}
 	}
 	&__tag {
@@ -39,6 +45,7 @@
 	.print-save {
 		float: right;
 		margin-right: 3rem;
+		
 		.icon-printer {
 			margin-right: 1rem;
 		}
@@ -48,6 +55,16 @@
 		height: 45rem;
 		padding-top: 5rem;
 		padding-left: 12rem;
+		@include breakpoint(tablet--landscape) {
+			height: 40rem;
+			padding-left: 4rem;
+			overflow: hidden;
+		}
+		@include breakpoint(mobile) {
+			height: 36rem;
+			padding-top: 3rem;
+			padding-left: 2rem;
+		}
 		h4 {
 			padding-left: 3rem;
 			font-family: $baseFont;
@@ -69,6 +86,17 @@
 			font-size: 3.5rem;
 			font-weight: 700;
 			color: $c-greyText;
+			@include breakpoint(tablet--landscape) {
+				margin-top: 3rem;
+				margin-bottom: 2rem;
+			}
+			@include breakpoint(mobile) {
+				position: relative;
+				margin-top: 1.5rem;
+				margin-bottom: 1rem;
+				font-size: 2.8rem;
+				z-index: 555;
+			}
 		}
 		ul li {
 			display: block;
@@ -77,6 +105,9 @@
 			font-size: 2.2rem;
 			line-height: 1.7;
 			color: #333;
+			@include breakpoint(mobile) {
+				font-size: 1.8rem;
+			}
 			&:before {
 				content: '';
 				display: block;
@@ -94,6 +125,11 @@
 		position: absolute;
 		top: 0;
 		right: 0;
+		height: 100%;
+		@include breakpoint(tablet--landscape) {
+			right: auto;
+			left: 50%;
+		}
 	}
 	span[class^="btn-"]:before {
 		@include absolute(center);
@@ -109,6 +145,16 @@
 		background-color: rgba(0,0,0,0.5);
 		cursor: pointer;
 		@include transition(0.2s all linear);
+		@include breakpoint(tablet--landscape) {
+			top: 6rem;
+		}
+
+		@include breakpoint(mobile) {
+			width: 3.7rem;
+			height: 3.7rem;
+			font-size: 1.8rem;
+			border-radius: 1.8rem;
+		}
 		&:hover {
 			background-color: $c-white;
 			color: $c-red;
@@ -116,9 +162,15 @@
 	}
 	.btn-prev {
 		left: 4rem;
+		@include breakpoint(mobile) {
+			left: 3rem;
+		}
 	}
 	.btn-next {
 		right: 4rem;
+		@include breakpoint(mobile) {
+			right: 3rem;
+		}
 	}
 	.slide-tags {
 		position: absolute;
@@ -130,9 +182,21 @@
 		font-size: 1.6rem;
 		color: $c-white;
 		background-color: rgba(0,0,0,0.3);
+		@include breakpoint(tablet--landscape) {
+			font-size: 2rem;
+		}
+		@include breakpoint(mobile) {
+			font-size: 1.5rem;
+		}
 		span {
 			font-family: $baseFont;
 			font-size: 1.4rem;
+			@include breakpoint(tablet--landscape) {
+				font-size: 2rem;
+			}
+			@include breakpoint(mobile) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

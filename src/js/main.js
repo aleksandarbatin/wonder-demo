@@ -13,5 +13,11 @@
         nextArrow: $('.btn-next')
     });
 
+    // #####################
+    // MOBILE MENU
+
+    $('.icon-menu').click(function(){
+    	$('.mobileMenu').toggle();
+    });
 
 })();

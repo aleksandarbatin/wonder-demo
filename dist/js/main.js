@@ -1,1 +1,1 @@
-!function(){$(".introSlider__wrapper").slick({prevArrow:$(".btn-prev"),nextArrow:$(".btn-next")})}();
+!function(){$(".introSlider__wrapper").slick({prevArrow:$(".btn-prev"),nextArrow:$(".btn-next")}),$(".icon-menu").click(function(){$(".mobileMenu").toggle()})}();

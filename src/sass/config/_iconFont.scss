@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?7x10xz');
-  src:  url('../fonts/icomoon.eot?7x10xz#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?7x10xz') format('truetype'),
-    url('../fonts/icomoon.woff?7x10xz') format('woff'),
-    url('../fonts/icomoon.svg?7x10xz#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?omx6rc');
+  src:  url('../fonts/icomoon.eot?omx6rc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?omx6rc') format('truetype'),
+    url('../fonts/icomoon.woff?omx6rc') format('woff'),
+    url('../fonts/icomoon.svg?omx6rc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,6 +28,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+  content: "\e90f";
+}
 .icon-chat:before {
   content: "\e906";
   color: #fff;
