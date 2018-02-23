@@ -9,7 +9,7 @@ git clone https://github.com/aleksandarbatin/wonder-demo.git
 cd wonder-demo
 npm install
 ```
-All files used for building project are in /assets folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that I used for css naming convention and files structure.
+All files used for building project are in /src folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that I used for css naming convention and files structure.
 
 ## Running the project
 
